@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import Section from '@/components/Section';
+import {View} from 'react-native';
+import Section from '../../components/Section';
 
 export default function CinemaScreen() {
   return (
