@@ -7,12 +7,8 @@ import MovieScreen from '../screens/MovieScreen';
 import CinemaScreen from '../screens/CinemaScreen';
 import WebScreen from '../screens/WebScreen';
 
-// const Stack = createNativeStackNavigator();
-
 // const {Navigator, Screen, Group} = createNativeStackNavigator();
 const {Navigator, Screen, Group} = createBottomTabNavigator();
-
-// const {Navigator, Screen, Group} = createMyTabNavigator();
 
 export default function RootRouter() {
   return (
