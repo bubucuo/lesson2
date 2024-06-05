@@ -15,7 +15,12 @@ export default function () {
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
   return (
     <View>
-      <Button title={count + ''} onPress={() => setCount(count + 1)} />
+      <Button
+        title={count + ''}
+        onPress={() => {
+          setCount(count + 1);
+        }}
+      />
 
       <Button
         title="Press me"

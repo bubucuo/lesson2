@@ -20,13 +20,11 @@ export default function () {
         <ImageBackground source={{uri: logo}} style={styles.logo}>
           <Text style={{color: 'blue', fontWeight: 'bold'}}>Inside</Text>
         </ImageBackground>
-
         <Text style={styles.bold}>App</Text>
         <Text style={styles.bold}>
           <Text>hello</Text>
           <Text style={{color: 'black'}}>logo</Text>
         </Text>
-
         <View style={styles.bold}>
           <Text>hello</Text>
           <Text style={{color: 'black'}}>logo</Text>

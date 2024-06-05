@@ -5,7 +5,7 @@ import {Link} from '@react-navigation/native';
 export default function HomeScreen({navigation}) {
   return (
     <View>
-      <Section>HomeScreen</Section>
+      <Section>HomeScreen-2</Section>
       <Link to={{screen: 'movie'}}>go movie</Link>
     </View>
   );

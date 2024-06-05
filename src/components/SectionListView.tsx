@@ -30,7 +30,7 @@ export default function () {
   return (
     <SectionList
       sections={DATA}
-      keyExtractor={(item, index) => item + index}
+      keyExtractor={(item, index) => item}
       renderItem={({item}) => (
         <View style={styles.item}>
           <Text style={styles.title}>{item}</Text>

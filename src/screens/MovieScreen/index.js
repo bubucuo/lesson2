@@ -4,7 +4,7 @@ import {movieOnInfoList} from '../../utils/service';
 import {useNavigation} from '@react-navigation/core';
 import {Button} from '@rneui/base';
 
-export default function CinemaScreen() {
+export default function MovieScreen() {
   return (
     <FlatList
       style={styles.list}
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
 });
 
 const Movie = movie => {
-  const navigation = useNavigation();
+  let navigation = {};
+  navigation = useNavigation();
   return (
     <View style={styles.box}>
       <Image
@@ -63,7 +64,7 @@ const Movie = movie => {
           title="购票"
           accessibilityLabel="购票"
           onPress={() => {
-            navigation.navigate('cinemaList', {...movie});
+            navigation.navigate('cinema', {...movie});
           }}
         />
       </View>

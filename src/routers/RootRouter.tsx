@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-// import {HomeScreen, ProfileScreen} from '../screens/index';
 import HomeScreen from '../screens/HomeScreen';
 import MovieScreen from '../screens/MovieScreen';
 import CinemaScreen from '../screens/CinemaScreen';
@@ -13,7 +12,7 @@ const {Navigator, Screen, Group} = createBottomTabNavigator();
 export default function RootRouter() {
   return (
     <Navigator>
-      <Screen name="Home" component={HomeScreen} options={{title: 'Welcome'}} />
+      <Screen name="Home" component={HomeScreen} options={{title: '首页'}} />
       <Screen name="movie" component={MovieScreen} options={{title: '电影'}} />
       <Screen
         name="cinema"
@@ -23,7 +22,7 @@ export default function RootRouter() {
       <Screen
         name="webview" // key
         component={WebScreen}
-        options={{title: '学习'}}
+        options={{title: '网页'}}
         initialParams={{uri: 'https://m.vip.com/index.html'}}
       />
     </Navigator>

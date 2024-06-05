@@ -8,16 +8,19 @@ export default function IOSComponents() {
     ActionSheetIOS.showActionSheetWithOptions(
       {
         options: ['Cancel', 'Generate number', 'Reset'],
-        destructiveButtonIndex: 2,
+        destructiveButtonIndex: 2, // reset
         cancelButtonIndex: 0,
         userInterfaceStyle: 'dark',
+        message: 'hello world',
       },
       buttonIndex => {
         if (buttonIndex === 0) {
           // cancel action
         } else if (buttonIndex === 1) {
+          // 生成新的值
           setResult(Math.floor(Math.random() * 100) + 1);
         } else if (buttonIndex === 2) {
+          // 重置
           setResult('🔮');
         }
       },
